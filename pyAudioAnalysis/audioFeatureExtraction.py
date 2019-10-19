@@ -7,8 +7,8 @@ import math
 from scipy.fftpack import fft
 from scipy.fftpack.realtransforms import dct
 import matplotlib.pyplot as plt
-from pyAudioAnalysis.pyAudioAnalysis import audioBasicIO
-from pyAudioAnalysis.pyAudioAnalysis import utilities
+from pyAudioAnalysis import audioBasicIO
+from pyAudioAnalysis import utilities
 from scipy.signal import lfilter
 
 eps = 0.00000001
