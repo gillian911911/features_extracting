@@ -1,11 +1,11 @@
-# V_features_extracting
+# Voice  features_extracting
 
 1. There are two classes voice analysia code, 1)voice features extracting and 2)voice emotion prediction.
 2. The voice features extracting is in pyAudioAnalysis packages.
 3. The emotion analysis is in CASIA packages.
 
 
-#pyAudioAnalysis is a Python library covering a wide range of audio analysis tasks. Through pyAudioAnalysis you can:
+# pyAudioAnalysis is a Python library covering a wide range of audio analysis tasks. Through pyAudioAnalysis you can:
 
 Extract audio features and representations (e.g. mfccs, spectrogram, chromagram)
 Classify unknown sounds
