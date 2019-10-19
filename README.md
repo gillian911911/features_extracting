@@ -5,7 +5,7 @@
 3. The emotion analysis is in CASIA packages.
 
 
-# pyAudioAnalysis is a Python library covering a wide range of audio analysis tasks. Through pyAudioAnalysis you can:
+## pyAudioAnalysis is a Python library covering a wide range of audio analysis tasks. Through pyAudioAnalysis you can:
 
 Extract audio features and representations (e.g. mfccs, spectrogram, chromagram)
 Classify unknown sounds
