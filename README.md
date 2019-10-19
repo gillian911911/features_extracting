@@ -101,3 +101,5 @@ angry	0.83/0.05	0.80/0.08
 happy	0.81/0.06	0.83/0.07
 
 
+
+ffmpeg下载地址https://www.ffmpeg.org/download.html#build-mac
