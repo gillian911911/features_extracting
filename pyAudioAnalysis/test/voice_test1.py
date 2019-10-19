@@ -1,7 +1,7 @@
 from scipy.signal.windows import blackmanharris
 import pyAudioAnalysis
-from V_features_extracting.pyAudioAnalysis.pyAudioAnalysis/audioAnalysis.py import audioBasicIO as aIO
-from pyAudioAnalysis.pyAudioAnalysis import audioSegmentation as aS
+from pyAudioAnalysis import audioBasicIO as aIO
+from pyAudioAnalysis import audioSegmentation as aS
 from pyAudioAnalysis import convertToWav
 from pyAudioAnalysis import audioFeatureExtraction as aFE
 from pyAudioAnalysis import audioVisualization as aV
@@ -61,12 +61,14 @@ def xlwrite_mid(F,name):
 
 # voice = Trans_Other_to_Wav("C:/CodeTools/voice.mp3")
 if __name__ == '__main__':
-    file_path = "C:\\Projects\\pyAudioAnalysis\\music1_wav"
+    file_path = "/Users/gillian/PycharmProjects/voice_mining/voice_ming20191018/V_features_extracting/CASIA/CASIA database/liuchanhg/angry"
     file_list = load_file(file_path)
     features_st = list()
     features_mt = list()
     print(file_list[1])
     for i, file in enumerate(file_list):
+        if file[-3:] != "wav":
+            continue
         [Fs, signal]=aIO.readAudioFile(file)
         #Audio(data = signal, rate = Fs)
 
