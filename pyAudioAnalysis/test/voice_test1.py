@@ -81,12 +81,13 @@ if __name__ == '__main__':
         signal = np.double(signal)
 
 
-        Fs1 = 0.05*Fs
-        Fs2 = 0.025*Fs
-        print("FS1",Fs1)
-        print("Fs2",Fs2)
-        SF = aFE.stFeatureExtraction(signal, Fs, Fs1, Fs2)#fs:采样频率，win:计算窗口； step:步长
-        MF = aFE.mtFeatureExtraction(signal, Fs, 1.0*Fs, 1.0*Fs, 0.05*Fs, 0.025*Fs)
+        win_s = 0.05*Fs
+        step_s = 0.025*Fs
+        win_m =1*Fs
+        step_m = 1*Fs
+       
+        SF = aFE.stFeatureExtraction(signal, Fs, win_s, step_s)#fs:采样频率，win:计算窗口； step:步长
+        MF = aFE.mtFeatureExtraction(signal, Fs, win_m, step_m, win_s, step_s)
 
         print("SF1%s" %i,SF[1])
         print("MF00%s" %i, MF[0][0])
@@ -116,4 +117,4 @@ if __name__ == '__main__':
         print(type(SF[0]))
         Beats= aFE.beatExtraction(SF[0], 0.25, PLOT=False) # -窗长为0.25s
         print("Beats %s" %i ,Beats)
-# \
+
